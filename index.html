@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WoL Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!-- Eventually switchable between light and dark modes -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<header>
+    <div id="logo"><img src="Logo1.png" height="80px" width="120px"> </div>
+</header>
+
+<!--what I can do is comment this out, but create a menu page with the menu info on it, and reference it on each page at the top of the body. -->
+
+<body>
+    <!--  
+    <embed src="menu.html" width="100%" height="40px" outline="none"> </embed> <!-- now this just gives it a tiny webpage in my webpage gah! Not what I want. -->
+    <!--
+    <div id="menu"> 
+      <div class="menubutton"><a href="index.html"> Home </a> </div>
+      <div class="menubutton"><a href="storylist.html"> Explore </a> </div>
+      <div class="menubutton"><a href="profile-temp.html"> Profile </a> </div>
+      <div class="menubutton"><a href="write.html"> Write </a> </div>
+      <div class="menubutton"><a href="activity.html">  Notifications </a></div>
+      <div class="menubutton"> Login </div>
+  </div> <!-- I don't want to have to do this on *every* page. There has to be a way. -->
+
+    <div id="menu">
+        Secret message!
+
+        <script>
+            $(function () {
+                $("#menu").load("menu.html");
+            });
+        </script>
+
+    </div>
+
+    <div id="hero">
+
+        <div id="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot"onclick="currentSlide(4)"></span>
+    </div>
+
+        <div class="slide">
+            <h2 class="feed-title"> Latest Blog Post </h2>
+            <script
+                src="//rss.bloople.net/?url=https%3A%2F%2Fwallofletters.com%2Ffeed%2F&limit=1&showtitle=false&showicon=true&showempty=true&type=js"> </script>
+        </div>
+        <!--I'll eventually get a better rss feed than this, but it sure does do the trick. -->
+        <div class="slide">
+            <p> Top Story -reads </p>
+        </div>
+        <div class="slide">
+            <p> Top Author -wc/reads </p>
+        </div>
+        <div class="slide">
+      <iframe src="https://discord.com/widget?id=636847442708529152" width="100%" height="200%" allowtransparency="true" frameborder="0"
+      float="center"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"> Join the Discord </iframe>
+    </div>
+    </div>
+    </div>
+
+    <script src="homeslide.js"> slide </script>
+
+    </div>
+
+    <div id="missedbox"> While you were gone... [This many stories you follow were updated, this many new stories were
+        posted by fav authors] Probably some RSS </div>
+
+    <div id="homebuttons">
+        <div class="homebutton"> Azgaar's Map Generator </div> 
+        <div class="homebutton"> Button 2 </div>
+        <div class="homebutton"> Button3 </div>
+        <div class="homebutton"> Button4 </div>
+    </div>
+
+    <!-- More content down here:-->
+    
+</body>
+<footer>
+    <div id="foot"> <a href="http://protaglives.wikidot.com"> Wiki </a> <a href="dokuwiki/feed.php"> Doku </a> </div>
+    
+    <!--probably gonna want to do the same thing as the menu with the footer and header.-->
+
+    <!-- cmd/ctrl / to automatically create comment tags -->
+</footer>
+
+</html>

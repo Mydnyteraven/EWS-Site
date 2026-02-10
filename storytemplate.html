@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WoL Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<header>
+    <div id="logo"><img src="Logo1.png" height="80px" width="120px"> </div>
+</header>
+
+<body>
+    <div id="menu">
+        menu goes here
+
+        <script>
+            $(function () {
+                $("#menu").load("menu.html");
+            });
+        </script>
+
+    </div>
+
+    <div id="breadcrumbs"> Storyname -- Chaptername
+        <div id="bookmark"> <img src="https://via.placeholder.com/75x100"></div>
+    </div>
+    <!--these will be links -->
+    <div id="storyname"> Title</div>
+    <div id="storyguide"> Guidance 
+        <hr></hr> 
+        <div id="storytoc"></div> 
+    </div>
+    <div id="storystats"></div>
+    <div id="storydesc"> Desc </div>
+    <div id="storycontent"> Content
+        <div id="newchap"> Newchap1 </div>
+    </div>
+    <div id="comments"> Comments </div>
+
+</body>
+
+</html>

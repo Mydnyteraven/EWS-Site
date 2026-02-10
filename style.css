@@ -1,0 +1,400 @@
+/* Colors */
+
+/* color: white;
+/* color: #11d6de; /* Light blue */
+/* color: #008b9f; /* Mid blue */
+/* color: #00444e; /* Dark blue */
+/* color: darkslategrey; /* for shadows */
+/* color: #f25d59; /* red */
+/* color: #fadd8f; /* light yellow */
+/* color: #e7992b; /* gold */
+/* color: #600080; /* purple */
+/* color: #19194d; /*favorite -dark blue */
+/* color: black; */
+
+
+
+    
+/* Main stuff */
+header {background-image: linear-gradient(45deg, white, #11d6de)}
+body {margin: 0;
+     background-color: white;
+     color: black}
+footer {
+    box-shadow: 2px 2px 5px 2px lightgrey;
+    top-margin: 20px;
+    padding: 10px;
+}
+body a:link {color:black};
+body a:visited {color:black};
+
+/*Menu and Header */
+
+#logo {background-color: transparent; margin: 0; height: 75px;}
+
+#menu { 
+    position: webkit-sticky;
+    position: sticky;
+    top: 0; background-image: linear-gradient( #008b9f, #00444e) ;
+ display: flex; flex-direction: row; 
+ justify-content: left;
+ margin: 0 auto;
+ border: black, 2px;
+ box-shadow:2px 2px 5px darkslategrey ;
+ }
+
+#menu_placeholder {
+    position: sticky;
+    position: webkit-sticky;
+}
+
+#menu a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#menu a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color:#00444e;
+  background-image: linear-gradient( #11d6de, #008b9f);
+  }
+
+#menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ .menubutton {
+ background-color: none;
+ color: white;
+ /* border: 2px solid powderblue; */
+ }
+ .othermenu {
+   color: white;
+   display: block;
+   float: right;
+ }
+
+ /* Index/Homepage */
+
+.homeslidebutton { 
+background-color: #f25d59;
+padding: 10px;
+border: none;
+display: block;
+} 
+
+* {box-sizing:border-box}
+
+#hero {
+    background-color: #fadd8f;
+    width: 80%; 
+    min-height: 300px;
+    margin: 20px auto;
+    border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px lightgrey;
+  font: 15px;
+   max-width: 1000px;
+  background-image: linear-gradient(#fadd8f, white);
+    overflow: auto;
+    max-height: 1000px;
+    color: black;
+    
+}
+#hero a:visited {color:black;}
+#hero a {color: black;}
+
+
+  .slide {display: none;
+  padding: 20px;
+  width: 100%;
+  min-height:300px;}
+
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f25d59;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+  
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;}
+
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f25d59;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 2px;
+  } 
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#missedbox {
+  background-image: linear-gradient(45deg, #e7992b, #fadd8f); 
+    width: 40%; 
+  min-height: 100px; 
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 5px lightgray;
+  }
+
+#homebuttons { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  }
+  
+  .homebutton {  
+    margin: 5px;
+    padding: 5px;
+    background-color: #f25d59;
+    color: white;
+    border-radius: 10px;
+    bottom: 0px;
+    box-shadow:2px 2px 5px grey;
+      min-height: 50px;
+      max-height: 100px;
+      min-width: 100px;
+      max-width: 150px;
+      text-align: center;
+      
+  }
+
+footer a {
+position: relative; bottom: 0; left: 0px;}
+footer a:hover {
+  background-color: pink;}
+  
+footer {background-color: #fadd8f;}
+
+/* Writepage */
+
+#writeform {Margin: 0 50px;}
+
+/* Storypage */
+
+#breadcrumbs {
+  width: 100%;
+  color: grey;
+}
+#bookmark {
+  margin-right: 10px;
+  margin-top: 0px;
+  float: right;
+}
+#storyname {
+  font-size:72px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 10px;
+    color: black;
+  background-color:none;
+  height: auto;
+  width: 100%;
+}
+#storydesc {
+  background-image: linear-gradient(#d0fafb, white);
+  width: 59%;
+  min-height: 100px;
+    border-radius: 20px;
+  margin-right: 2%;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px lightgray;
+    padding: 10px;
+}
+#storyguide {
+  background-image: linear-gradient(white, #fadd8f);
+  float: right;
+  width: 40%;
+  min-height: 150px;
+  max-height: 350px;
+  margin-left:10px;
+    margin-top:0;
+    margin-right:0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+    padding: 10px;
+}
+#storycontent {
+  background-image: linear-gradient(#fffff0, #ffffff);
+  width: 59%;
+  min-height: 350px;
+  padding: 20px;
+  margin-right: 2%;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+#storystats {
+  min-height: 50px;
+  width: 100%;
+    margin:0;
+  padding: 10px;
+  bottom: 0;
+  position: bottom;
+  float: right;
+}
+#newchap { 
+  bottom: 10px;
+  margin: 20px auto 10px auto;
+  background-image: linear-gradient(#008b9f,#00444e);
+  width: 150px;
+  height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+  color:white;
+}
+    
+#comments {
+  width: 90%;
+  min-height: 50px;
+  margin: 10px;
+}
+
+#writeform2 {
+/*     this isnt going to match off the bat because I'm copying this code from somplace else */
+  h1 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+            color: #957dad;
+            font-family: 'Montserrat', sans-serif;
+        }
+          
+        section {
+            padding: 5%;
+            padding-top: 0;
+            height: 100vh;
+        }
+          
+        .side {
+            margin-left: 0;
+        }
+          
+        button {
+            margin: 10px;
+            border-color: #957dad !important;
+            color: #888888 !important;
+            margin-bottom: 25px;
+        }
+          
+        button:hover {
+            background-color: #fec8d8 !important;
+        }
+          
+        textarea {
+            padding: 3%;
+            border-color: #957dad;
+            border-width: thick;
+        }
+          
+        .flex-box {
+            display: flex;
+            justify-content: center;
+        }  
+}
+
+/* Story Lists */
+
+#storylink {
+    background-color: linear-gradient {#fadd8f, white};
+    width: 90%;
+    minheight: 50px;
+    border-width:2px;
+    border-style: solid;
+    style: H2;
+}
+
+#storylink a:link {color:#008b9f}
+#storylink a:visited{color:#00444e}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones and narrow screens: */
+
+/*menu*/
+
+    #menu {
+        display: flex; flex-direction: row; 
+ justify-content: left;
+    padding: 0px;
+  overflow: scroll;
+  background-color: #f1f1f1;
+
+        /* this is where I get it to collapse on small screens. */
+        
+    }
+
+    
+    
+    /*storypage: */
+  #storyguide {
+    width: 100%;
+      border-radius:0px;
+      margin:0;
+      float: none;
+  }
+#storycontent {
+    width:100%;
+    border-radius:0px;
+    margin:0;
+    
+}
+#storydesc {
+    width: 100%;
+    border-radius:0px;
+    margin:0;
+}
+#comments {
+    width: 100%;
+    border-radius:0px;
+    margin:0;
+          }
+}
+
+/* @media only screen and (min-width: 600px) {
+/* For those medium screens and ipads */
+/*    #storyguide {
+        width: 25%;
+  }
+    #storycontent {
+        width:75%;
+}
+    #storydesc {
+        width: 75%;
+}
+    #comments {
+        width: 100%;
+          }
+} */
